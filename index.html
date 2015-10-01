@@ -31,6 +31,89 @@
                 border: none !important;
                 box-shadow: none !important;
             }
+
+            h1, h2, h3 {
+                font-family: 'KG HAPPY' !important
+            }
+
+            h4, h5, h6 {
+                font-family: 'KG HAPPY Solid' !important
+            }
+
+            .reveal blockquote {
+                font-family: 'KG HAPPY Solid' !important;
+                font-style: italic;
+                border: none;
+                box-shadow: none
+            }
+
+            .reveal blockquote:before {
+                content: '"';
+                transform: scale(-1, 1);
+                font-size: 190px;
+                position: absolute;
+                top: -90px;
+                left: -40px;
+                color: #CCC;
+            }
+
+            .reveal blockquote:after {
+                content: '"';
+                font-size: 190px;
+                position: absolute;
+                bottom: -90px;
+                right: -60px;
+                color: #CCC;
+            }
+
+            .circle {
+                border: 1px solid #000;
+                border-radius: 50% 50%;
+            }
+
+            .citer {
+                font-size: 20px !important;
+                font-style: italic !important;
+                text-align: center;
+            }
+
+            .reveal .slides {
+                background: transparent;
+            }
+            .reveal {
+                background: #F1F1F1;
+            }
+
+            section {
+                background: #F1F1F1;
+            }
+            .reveal.page .slides section:not(.stack):after {
+                box-shadow: none
+            }
+            .gray {
+                color: #CCC;
+            }
+            .green {
+                color: #38733A;
+            }
+            .red {
+                color: red;
+            }
+            .bold-gray {
+                color: #909090;
+            }
+            .event-logo {
+                width: 10%;
+                position: absolute;
+                bottom: 10px;
+                left: 30px;
+            }
+            .boss-logo {
+                width: 3%;
+                position: absolute;
+                bottom: 3%;
+                left: 13%;
+            }
         </style>
     </head>
 
@@ -38,12 +121,52 @@
 
         <div class="reveal">
 
+            <img class="event-logo" src="assets/img/phpeste.png" />
+            <img class="boss-logo" src="assets/img/ocramius.gif" />
+
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
 
-                <section data-background="#FFFFFF">
+                <section>
                     <img src="assets/img/open-source-all-the-things.png" alt="Open-source all the things!" />
-                    <p style="color: black">Jefersson Nathan (@malukenho)</p>
+                    <h4 style="color: black">Jefersson Nathan (@malukenho)</h4>
+                </section>
+
+                <section>
+                    <h1>Valeu seus putos!</h1>
+                    <img src="assets/img/phpeste-comunidade.png">
+                </section>
+
+                <section>
+                    <img class="circle" src="assets/img/malukenho.jpeg">
+
+                    <h2>Jefersson Nathan</h2>
+                    <h4>
+                        <span class="gray">(</span>
+                        <span class="bold-gray">@malukenho</span>
+                        <span class="gray">)</span>
+                    </h4>
+                    <p>&nbsp;</p>
+                    <h4 class="fragment">PHP Sergipe</h4>
+                    <h4 class="fragment">Marco Pivetta</h4>
+                    <h4 class="fragment">Open-Source</h4>
+                </section>
+
+                <section>
+                    <h2>Agenda</h2>
+
+                    <p>&nbsp;</p>
+
+                    <ul>
+                        <li class="fragment"><h4>Introdução</h4></li>
+                        <li class="fragment"><h4>Carreira</h4></li>
+                        <li class="fragment"><h4>Comunidade</h4></li>
+                        <li class="fragment"><h4>Mitos</h4></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>O que vem a sua cabeça, quando você pensa em <span class="green">open-source</span>?</h4>
                 </section>
 
                 <section>
@@ -58,25 +181,31 @@
                 <section>
                     <img src="assets/img/santos-dumont.png" alt="Santos dumont">
                     <h4 class="fragment">Pai do open-souce no Brasil.</h4>
+                    <h4 class="fragment">Pai da aviação.</h4>
                 </section>
 
                 <section>
-                    <h3>MAS O QUE SANTOS DUMONT TÊM A VER COM O OPENSOURCE?</h3>
-
-                    <p class="fragment"><i>Simplesmente que, ao contrário de qualquer inventor da época, Santos Dumont não patenteou <strong>NENHUM</strong> de seus inventos propositadamente, de forma que qualquer um pudesse usá-lo sem precisar pedir autorização ou pagar créditos, permitindo a inovação e novas criações.</i></p>
-
-
-                    <p class="fragment">vivaaolinux.com.br</p>
+                    <h4>
+                    <span class="bold-gray">MAS O QUE</span> SANTOS DUMONT <br />
+                    <span class="bold-gray"> TEM HAVER COM O <span class="green">OPEN-SOURCE</span>?</span></h4>
                 </section>
 
+                <section>
+                    <h4>Santos Dumont não patenteou <strong>NENHUM</strong> de seus inventos propositadamente.
+                    </h4>
+                </section>
+
+                <section>
+                    <h4>O avião é considerado um dos primeiros projetos open source do mundo.</h4>
+                </section>
 
                 <section>
                     <blockquote>
                         Todas as coisas mais evoluídas do mundo moderno são frutos do espírito open source e da vontade que as pessoas têm de colaborar.
-                        Se não fosse o espírito open source de Santos Dumont, não teríamos o avião da forma como ele é hoje (o avião é considerado um dos primeiros projetos open source do mundo)
+                        Se não fosse o espírito open source de Santos Dumont, não teríamos o avião da forma como ele é hoje
                     </blockquote>
 
-                    <p class="fragment"><small><i>Livro Open web platform</i></small></p>
+                    <h4 class="citer"> — Livro Open web platform</h4>
                 </section>
 
                 <section>
@@ -86,61 +215,30 @@
                 </section>
 
                 <section>
-                    <h3>Carreira</h3>
+                    <h3>Já re-inventou a roda?</h3>
                 </section>
 
                 <section>
-                    <h3>Não contrate membros ativos da comunidade PHP</h3>
-                    <p><small>Cal Evans</small></p>
+                    <h3>Já pensou em ser parte de um projeto open-source?</h3>
                 </section>
 
                 <section>
-                    <ul>
-                        <li class="fragment">Membros da comunidade PHP resolvem problemas</li>
-                        <li class="fragment">Se eles não conseguem resolver um problema, geralmente conhecem alguém que pode</li>
-                        <li class="fragment">Eles adoram se exibir</li>
-                        <li class="fragment">Eles fazem seus colaboradores irem a conferências e mostrar que está tudo bem</li>
-                        <li class="fragment">Eles trabalham de graça</li>
-                    </ul>
+                    <h1>Razões</h1>
+
+                    <h4 class="fragment">Você não tem ambições</h4>
+                    <h4 class="fragment">Você é preguisoço</h4>
+                    <h4 class="fragment">Você é desmotivado</h4>
+                    <h4 class="fragment">Você é acomodado</h4>
+                    <h4 class="fragment">Você não tem tempo</h4>
                 </section>
 
                 <section>
-                    <h3>Carreira</h3>
-                </section>
+                    <h1>Desculpas</h1>
 
-                <section>
-                    <h3>Carreira</h3>
-                </section>
-
-                <section>
-                    <h3>Carreira</h3>
-                </section>
-
-                <section>
-                    <h3>O que fazer?</h3>
-
-                    <h4 class="fragment">Seguir o caminho open-souce</h4>
-                    <h4><span class="fragment">ou</span></h4>
-                    <h4 class="fragment">Meh!</h4>
-                </section>
-
-                <section>
-                    <blockquote>
-                        Não existe melhor faculdade que o open-souce.
-                    </blockquote>
-
-                    <div class="author">- Augusto Pascutti</div>
-                </section>
-
-                <section>
-                    <h3>Invista em você mesmo.</h3>
-                </section>
-
-                <section>
-                    <h3 class="fragment">"Mas, eu não sei por onde começar."</h3>
-                    <h3 class="fragment">"Eu acho que não sou capaz."</h3>
-                    <h3 class="fragment">"Quando eu estiver melhor eu faço."</h3>
-                    <h3 class="fragment">"Sou muito velho pra começar."</h3>
+                    <h4 class="fragment">"Mas, eu não sei por onde começar."</h4>
+                    <h4 class="fragment">"Eu acho que não sou capaz."</h4>
+                    <h4 class="fragment">"Quando eu estiver melhor eu faço."</h4>
+                    <h4 class="fragment">"Sou muito velho pra começar."</h4>
                 </section>
 
                 <section>
@@ -148,18 +246,134 @@
                 </section>
 
                 <section>
+                    <h2>Reconhecimento</h2>
+                </section>
+
+                <section>
+                    <h3>Reconhecimento tem um custo</h3>
+
+                    <p>&nbsp;</p>
+
+                    <ul>
+                        <li><h4 class="fragment">Você tem que <span class="red">&hearts;</span> o que faz</h4></li>
+                        <li><h4 class="fragment">Você tem que treinar</h4></li>
+                        <li><h4 class="fragment">Você tem que se manter motivado</h4></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Motivação</h3>
+
+                    <p>&nbsp;</p>
+
+                    <ul>
+                        <li><h4 class="fragment">Participar de grupos de usuários</h4></li>
+                        <li><h4 class="fragment">Ser um aprendiz <span class="fragment bold-gray">(PHP Mentoring)</span></h4></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <blockquote>Não contrate membros ativos da comunidade PHP</blockquote>
+                    <h4 class="citer"> — Cal Evans</h4>
+                </section>
+
+                <section>
+                    <h3>Why not?</h3>
+
+                    <p>&nbsp;</p>
+
+                    <ul>
+                        <li class="fragment"><h5>Membros da comunidade PHP resolvem problemas</h5></li>
+                        <li class="fragment"><h5>Se eles não conseguem resolver um problema, geralmente conhecem alguém que pode</h5></li>
+                        <li class="fragment"><h5>Eles adoram se exibir</h5></li>
+                        <li class="fragment"><h5>Eles fazem seus colaboradores irem a conferências e mostrar que está tudo bem</h5></li>
+                        <li class="fragment"><h5>Eles trabalham de graça</h5></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Como ser um programador melhor?</h4>
+                </section>
+
+                <section>
+                    <blockquote>Leia muito código e escreva muito código.</blockquote>
+                    <h4 class="citer"> — Stallman</h4>
+                </section>
+
+                <section>
+                    <blockquote>Não existe melhor faculdade que o <br /> <span class="green">open-souce</span>.</blockquote>
+
+                    <h4 class="citer"> — Augusto Pascutti</h4>
+                </section>
+
+                <section>
+                    <h3>Invista em você mesmo.</h3>
+                </section>
+
+                <section>
+                    <h3>Como justificar o quanto você ganha?</h3>
+                </section>
+
+                <section>
                     <h3>Markething pessoal</h3>
-                    <p class="fragment">
-                        <small>Open-source novamente ...</small>
-                    </p>
                 </section>
 
                 <section>
-                    <h2>Community</h2>
+                    <h3>Não seja uma PUTA!</h3>
                 </section>
 
                 <section>
-                    <h2>Comunidade vs. Open-Source</h2>
+                    <h3>Seja estritamente cuidadoso com suas ações na internet.</h3>
+                </section>
+
+                <section>
+                    <h2>Comunidade</h2>
+                </section>
+
+                <section>
+                    <blockquote>Me sinto bem <br /> ajudando as pessoas</blockquote>
+                    <h4 class="citer fragment"> — Egoísta</h4>
+                </section>
+
+                <section>
+                    <h2>Comunidade <br />vs <br /> Open-Source</h2>
+                </section>
+
+                <section>
+                    <img src="assets/img/microsoft.png" />
+                </section>
+
+                <section>
+                    <blockquote>Use esse software <br /> porque tem uma <br /> empresa por trás.</blockquote>
+
+                    <h4 class="citer"> — ZF / Symfony</h4>
+                </section>
+
+                <section>
+                    <img style="width: 50%" src="assets/img/codeigniter-logo.png" />
+                </section>
+
+                <section>
+                    <h2>
+                    <img src="assets/img/open-source.png">
+                    <div>+</div>
+                    Vendor lock-in</h2>
+                </section>
+
+                <section>
+                    <h2>Comunidade inspira</h2>
+                </section>
+
+                <section>
+                    <img src="assets/img/dohms-help.png" />
+                </section>
+
+                <section>
+                    <img src="assets/img/comunidade-em-acao.png" />
+                </section>
+
+                <section>
+                    <img src="assets/img/phpeste.png" />
                 </section>
 
                 <section>
@@ -167,11 +381,17 @@
                 </section>
 
                 <section>
-                    <h2>Community stars</h2>
+                    <h4>Essas pessoas empuram <br/> a comunidade pra frente.</h4>
                 </section>
 
                 <section>
-                    <h2>Comunidade inspira</h2>
+                    <h3>O que fazer?</h3>
+
+                    <h4 class="fragment">Seguir o caminho do open-souce</h4>
+                </section>
+
+                <section>
+                    <h2>Community stars</h2>
                 </section>
 
                 <section>
@@ -196,43 +416,25 @@
                 </section>
 
                 <section>
-                    <h2>Use esse software porque tem uma empresa por trás.</h2>
-
-                    <h3>ZF / Symfony</h3>
-                </section>
-
-                <section>
-                    <h2>Code Inginiter</h2>
-                </section>
-
-                <section>
-                    <h2>
-                    <img src="assets/img/open-source.png">
-                    <div>+</div>
-                    Vendor lock-in</h2>
-                </section>
-
-                <section>
                     <h2>PHPeste</h2>
                 </section>
 
                 <section>
-                    <h2>Espirito livre</h2>
+                    <h2>Espírito livre</h2>
                     <h2 class="fragment">Espirito de comunidade</h2>
                 </section>
 
                 <section>
-                    - Introduce myself
-                    - Motivation
+                    <h2>Perguntas?</h2>
+                </section>
 
-                    - Talk about people who is recognized in the community
-                    - Talk about crowdfunding.
-                    - The guys who is recognized by community is what Do the community (show donation members)
-                    - Talk about community make the PHPeste event
-
-                    - Why contribute to open-source.
-                    - WHy open-source all the things.
-                    - Copy-left
+                <section>
+                    <h1>Obrigado!</h1>
+                    <h4>
+                        <span class="gray">(</span>
+                        <span class="bold-gray">@malukenho</span>
+                        <span class="gray">)</span>
+                    </h4>
                 </section>
             </div>
 
